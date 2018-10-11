@@ -32,9 +32,9 @@ type leaf struct {
 	h        Hand
 }
 
-// RegisterRoulter 注册路由
+// RegisterRouter 注册路由
 // path:完整的URI(不包含URI参数),前后没有 "/" 的格式
-func (t *tree) RegisterRoulter(path string, f Hand, methods ...string) {
+func (t *tree) RegisterRouter(path string, f Hand, methods ...string) {
 	// 以 "/" 分割成数组
 	paths := strings.Split(path, "/")
 

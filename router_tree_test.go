@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_RegisterRoulter(_t *testing.T) {
+func Test_RegisterRouter(_t *testing.T) {
 	path := "user/hand/hah"
 	pather := "role/hander"
 	pathers := "role/handers"
@@ -17,9 +17,9 @@ func Test_RegisterRoulter(_t *testing.T) {
 	t := &tree{
 		leafs: make(map[string]*leaf),
 	}
-	t.RegisterRoulter(path, f, "get")
-	t.RegisterRoulter(pather, f, "get")
-	t.RegisterRoulter(pathers, f, "get")
+	t.RegisterRouter(path, f, "get")
+	t.RegisterRouter(pather, f, "get")
+	t.RegisterRouter(pathers, f, "get")
 
 	// 获取处理方法
 	if f, err := t.GetHand(path, "get"); err != nil {
