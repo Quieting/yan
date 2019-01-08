@@ -1,15 +1,12 @@
 package arithmetic
 
 import (
-	"fmt"
 	"testing"
 )
 
 func TestAbandon(t *testing.T) {
-	data := []int64{5, 6, 7, 8}
-	n := 2
-	dst := make([]int64, 0)
-
-	abandon(dst, data, 0, n, 0)
-	fmt.Printf("%+v", dst)
+	// data := []int64{5, 6, 7, 8}
+	// dst := combination2(data, 2)
+	// fmt.Printf("dst:%+v\n", dst)
+	test()
 }
