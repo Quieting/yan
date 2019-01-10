@@ -1,8 +1,4 @@
-// Package server 注册路由
-// 通过寻找配置文件自动注册路由,路由规则:
-// URI最后一级对应方法,倒数第二级对应结构体,多余层级路由全是包名
-// 因此URI至少是两级URI
-package server
+package yan
 
 import (
 	"errors"
@@ -10,6 +6,10 @@ import (
 	"net/http"
 	"strings"
 )
+
+// 通过寻找配置文件自动注册路由,路由规则:
+// URI最后一级对应方法,倒数第二级对应结构体,多余层级路由全是包名
+// 因此URI至少是两级URI
 
 // Hand http业务处理函数
 type Hand func(w http.ResponseWriter, r *http.Request)

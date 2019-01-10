@@ -70,8 +70,6 @@ func addone(res [][]int64, d []int64) {
 	res = append(res, d)
 }
 
-// 请教一个问题，在 golang 中 []int64 类型作为函数参数传入时是传递的地址值，而 [][]int64 却不是什么
-//
 func test() {
 	sliceOne := make([]int64, 0, 10)
 	sliceOne = append(sliceOne, 2)
